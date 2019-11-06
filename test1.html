@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+<script src="jquery-3.4.1.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+
+	$("#1").mouseover(function(){  
+          $("#1").css({"border":"2px solid red","width":"25%"});
+         
+    });
+    $("#2").mouseover(function(){  
+          $("#2").css({"border":"2px solid red","width":"25%"});
+         
+    });
+    $("#3").mouseover(function(){  
+          $("#3").css({"border":"2px solid red","width":"25%"});
+         
+    });
+         
+    $("#1").mouseout(function(){  
+          $("#1").css({"border":"2px solid black","width":"100px"})
+         
+    });
+     $("#2").mouseout(function(){  
+          $("#2").css({"border":"2px solid black","width":"100px"})
+         
+    });
+      $("#3").mouseout(function(){  
+          $("#3").css({"border":"2px solid black","width":"100px"})
+         
+    });
+    })
+</script>
+</head>
+<body>
+	
+	<img src="images (2).jpg" style="border: 2px solid black,"  id="1">
+	<img src="images (2).jpg" style="border: 2px solid black" id="2">
+	<img src="images (2).jpg" style="border: 2px solid black" id="3">
+		
+	
+</body>
+</html>

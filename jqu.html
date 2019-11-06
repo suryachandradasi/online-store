@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Try jQuery Online</title>
+<script src="jquery-3.4.1.js"></script>
+<script src="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.js"></script>
+<script>
+$(document).ready(function() {
+// alert("document ready");
+ //$("#bb").click(function(){
+  	//$("div:not(#bb, #div2)").hide()
+  	//$("#div1 p:last").hide()
+  	//$("#div1 p:nth-child(2)").hide()
+  	//$("ul li:empty").hide()
+   // $("#div1").css("border","2px solid green")
+     //  $("#div1").css({"border":"2px solid green","color":"red"})
+     //$("#div1").fadeOut(2500);
+     //$("#div2").fadeToggle("slow");
+     // $("#div2").fadeTo("slow", 0.4);
+     //$("#div2").fadeTo("slow", 0.4);
+
+   /* $("img").mouseover(function(){  
+        $("img").attr("src","");  
+    });  
+    $("img").mouseout(function(){  
+        $("img").attr("src", "");  
+      });*/
+
+// })
+$("#pickDate").datepicker({changeMonth:true,changeYear:true,showWeek:true,maxDate:new Date(2019,11,30)});
+ 
+})
+
+</script>
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.structure.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui-1.12.1/jquery-ui.theme.css">
+
+</head>
+<body>
+	<div id="div1">
+		<p>this is jquery first program</p>
+		<p>this is second</p>
+		<p>this i slast</p>
+		Pick a Date:<input type="text" name="pickDate" id="pickDate">
+
+	</div>
+	<div id="div2">
+		<ul>
+			<li>vhvk</li>
+			<li>tfyby</li>
+			<li>rjbku</li>
+			<li></li>
+		</ul>
+	</div>
+	<div id="bb">
+		<button>click to see</button>
+	</div>
+</body>
+</html>

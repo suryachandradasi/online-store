@@ -1,0 +1,199 @@
+body{
+      margin: 0;
+      padding: 0;
+      background-image: url(bb.jpg);
+      background-size: cover;
+      
+      font-family: sans-serif;
+}
+
+.frame{
+
+	height: 420px;
+	width: 320px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+.close img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+	.frame{
+		background-color: black;
+	}
+
+h1{
+	margin: 0px;
+	padding: 0px 0px 20px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.frame p{
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+.frame input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.frame input[type="text"], input[type="password"]
+{
+
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+
+ }
+ .frame input[type="submit"]
+ {
+ 	border: none;
+ 	outline: none;
+ 	height: 40px;
+ 	background: #1c8abd;
+ 	color: #fff;
+ 	border-radius: 20px;
+ 	font-size: 22px;
+
+ }
+  .frame input[type="submit"]:hover
+  {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  .frame input[type="checkbox"]
+  {
+  	width: 10%;
+  	height: 10px;
+  }
+  .frame label{
+  	font-size: 15px;
+  	color: red;
+  }
+  .frame a{
+
+  	text-decoration: none;
+  	font-size: 12px;
+  	line-height: 20px;
+  }
+  .frame a:hover{
+  	color: #fb2525;
+  }
+  .for{
+  	float: left;
+  }
+  .dont{
+  	float: right;
+  }
+
+  .frame1{
+
+  height: 520px;
+  width: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+.frame1{
+    background-color: black;
+  }
+
+.frame1 p{
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.frame1 input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.frame1 input[type="text"], input[type="password"]
+{
+
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+
+ }
+ .frame1 input[type="submit"]
+ {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c8abd;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 22px;
+
+ }
+  .frame1 input[type="submit"]:hover
+  {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+  }
+  
+  .frame a{
+
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .frame a:hover{
+    color: #fb2525;
+  }

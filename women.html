@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Design</title>
+	<link rel="stylesheet" type="text/css" href="style11.css">
+
+
+</head>
+<body>
+	<header class="main-header">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store1.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+<div class="main">
+	<div class="topbar"></div>
+
+	<div class="social_icon">
+		<div class="container">
+			<div class="icon">
+				<a href="https://facebook.com"><img src="images/icon1.png"></a>
+				<a href="https://dribble.com"><img src="images/icon2.png"></a>
+				<a href="https://twittr.com"><img src="images/icon3.png"></a>
+				<a href="https://gmail.com"><img src="images/icon4.png"></a>
+				<a href="https://vimeo.com"><img src="images/icon5.png"></a>
+			</div>
+			<div class="header_right">
+				<div class="login_register_btn">
+					<a href="llo.html">Login / </a>  
+					<a href="reg.html">Register</a>
+				</div>
+				<div class="cart_btn">
+				<img src="images/cart.png">
+				<span onclick="document.getElementById('1').style.display='block'">Cart (0)</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="1" class="modal">
+  <span onclick="document.getElementById('1').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/images (5).jpg" width="100" height="100">
+                        <span class="cart-item-title">Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">RS 1999</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="images/images (35).jpg" width="100" height="100">
+                        <span class="cart-item-title">Party Wear</span>
+                    </div>
+                    <span class="cart-price cart-column">RS 1999</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">RS 3997</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button" onclick="alert('THANK YOU FOR YOUR PURCHASE')">PURCHASE</button>
+        </section>
+</div>
+<script>
+var modal = document.getElementById('1');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<img src="images/images (4)1.png">
+			</div>
+			<div class="navbar">
+				<a href="store1.html">HOME</a>
+				<a href="men.html">MEN</a>
+				<a href="women.html">WOMEN</a>
+				<a href="kids.html">BABY & KIDS</a>
+				<a href="#" onclick="alert('CURRENTLY OFFERS ARE NOT AVAILABLE')">OFFERS ZONE</a>
+				<a href="#">CONTACT</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="slider">
+		<div class="container">
+			<div class="slideshow">
+				<img class="mySlides" src="images/images (25).jpg">
+				<img class="mySlides" src="images/download (4).jpg">
+				<img class="mySlides" src="images/slide3.jpg">
+			</div>
+
+			<div class="center">
+				<a href="#" id="next" onclick="move(-1)"><img src="images/leftarrow.png"></a>
+				<a href="#" id="prev" onclick="move(1)"><img src="images/rightarrow.png"></a>
+			</div>
+		</div>
+	</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+ 
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000);
+}
+</script>
+
+	<div class="welcome_text">
+		<div class="container">
+			<h1>WELCOME TO  <span>DRESSING STORE,</span>  CHECK OUR LATEST STYLES FOR WOMEN</h1>
+		</div>
+	</div>
+
+	<div class="event_section">
+		<div class="container">
+			<div class="event_one">
+				<h3>CHECK OUR STYLISH COLLECTION</h3>
+				<p>Nike, Adidas,Levis,Gucci,Polo Ralph Lauren,
+				Calvin Klein,Aeropostale, Versace.</p>
+			</div>
+
+			<div class="event_two">
+				<h3>BEST PRODUCTS TO PURCHASE</h3>
+				<p>Balenciaga,Givenchy,Dolce & Gabbana,Vetements,
+					Versace, Fendi,Prada.</p>
+			</div>
+
+			<div class="event_three">
+				<h3>UPCOMING DRESSING STYLES</h3>
+				<p>Levi,Dior,H&M or Louis Vuitton,Christian Dior,Richemont,
+				EstéeLauder,Phillips-Van Heusen,Coach,Levi Strauss.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="product">
+		<div class="container">
+			<div class="product_section_title">LATEST ARRIVALS IN STYLING</div>
+
+			<div class="product_one">
+				<div class="product_img">
+					<img src="images/images (40).jpg">
+				</div>
+				<div class="product_text">
+					<h4>Party Wear<i>by  Anavila</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/images (23).jpg">
+				</div>
+				<div class="product_text">
+					<h4>Ethnic Wear<i>by Quirk Box</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_three">
+				<div class="product_img">
+					<img src="images/image2.jpg">
+				</div>
+				<div class="product_text">
+					<h4>Casual Wear<i>by FabIndia</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_four">
+				<div class="product_img">
+					<img src="images/images (22).jpg">
+				</div>
+				<div class="product_text">
+					<h4>Peplum Dress<i>by Biba</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="product">
+		<div class="container">
+			<div class="product_section_title">LATEST ARRIVALS IN STYLING</div>
+
+			<div class="product_one">
+				<div class="product_img">
+					<img src="images/Empire.jpg">
+					<span>SALE</span>
+				</div>
+				<div class="product_text">
+					<h4>KDJBDKNS <i>by DLAJ KB</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_two">
+				<div class="product_img">
+					<img src="images/images (35).jpg">
+					<span>SALE</span>
+				</div>
+				<div class="product_text">
+					<h4>OSKAB<i>by DALJBt</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_three">
+				<div class="product_img">
+					<img src="images/images (38).jpg">
+					<span>SALE</span>
+				</div>
+				<div class="product_text">
+					<h4>KJDBSGZ <i>by JSRKBJG</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+
+			<div class="product_one product_four">
+				<div class="product_img">
+					<img src="images/download (5).jpg">
+					<span>SALE</span>
+				</div>
+				<div class="product_text">
+					<h4>JVYJHKJ <i>by JHVM HGH</i></h4>
+				</div>
+				<div class="star_rating">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star1.png">
+					<img src="images/star2.png">
+				</div>
+				<div class="product_desc">
+					<b>Lorem ipsum</b> dolor sit amet, con
+					adipiscing elit, sed diam nonu. 
+				</div>
+				<div class="product_price">
+					<div class="price">
+						RS.1499
+					</div>	
+					<div class="button">
+						ADD TO CART
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="brand">
+		<div class="container">
+			<div class="product_section_title">OUR MOST IMPORTANT PUBLISHERS</div>
+
+			<div class="brand_image">
+				<img src="images/brand1.jpg">
+				<img src="images/brand2.jpg">
+				<img src="images/brand3.jpg">
+				<img src="images/brand4.jpg">
+				<img src="images/brand5.jpg">
+				<img src="images/brand6.jpg">
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			<div class="column3">
+				<h4>Little about us</h4>
+				<p><b>However,</b> at the main set. 
+				There is no free, for online transactions. 
+				It is <b>Safe</b> for transactions, and
+				We Guarantee that our product are Genuine.</p>
+				<br>
+				<h4>Socialize with us</h4>
+				<p><img src="images/icon6.png"><img src="images/icon7.png"><img src="images/icon8.png"><img src="images/icon9.png"><img src="images/icon10.png"></p>
+			</div>
+			<div class="column3 second-column">
+				<h4>Our Archives</h4>
+				<p>October 2019</p>
+				<p>September 2019</p>
+				<p>August 2019</p>
+				<p class="not">March 2019</p>
+			</div>
+			<div class="column3 third-column">
+				<h4>Popular stores</h4>
+				<p><img src="image (1).jpg">
+				<span><b>Stores View</b><br><small><img src="images/icon11.png"> 12 COMMENTS</small></span>
+				</p>
+				<p><img src="image (18).jpg">
+				<span><b>Stores View</b><br><small><img src="images/icon11.png"> 12 COMMENTS</small></span>
+				</p>
+			</div>
+			<div class="column3 four-column">
+				<h4>Search our Site</h4>
+				<p><input type="search" class="search" placeholder="Enter Search ..." name=""></p>
+				<br>
+				<h4>INFORMATION</h4>
+				<p><a href="about.html">About</a> <a href="#">Delivery Information</a> <a href="#">Privacy Policy</a><a href="#">Tearm & Condition</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom">
+		<div class="container">
+			<div class="column6">
+				<a href="index.html">Home</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Sitemap</a>
+				<a href="#">Contact</a>
+			</div>
+			<div class="column6 copyright">
+				<p>DRESSING @2019 by K17PG | All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+
+</div><!--main-->
+
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.cycle.all.js"></script>
+<script src="js/jquery.cycle2.carousel.js"></script>
+<script>
+	$('.slideshow').cycle({
+		next: '#next',
+		prev: '#prev'
+	});
+</script>
+</body>
+</html>
